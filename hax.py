@@ -29,13 +29,7 @@ print(data)
 
 score_response = session.post(
     BASE_URL + "/ajax/qufw/",
-    data={
-        "name": username,
-        "points": score,
-        "dist": distanceRan,
-        "t": timeSpent,
-        "token": token
-    }
+    data=data
 )
 
 print(str(score_response))
